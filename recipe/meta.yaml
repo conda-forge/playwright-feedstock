@@ -1,5 +1,5 @@
 {% set name = "playwright" %}
-{% set version = "1.50.1" %}
+{% set version = "1.51.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/microsoft/{{ name }}/archive//v{{ version }}.tar.gz
-  sha256: caa342a409d230eb86828291e8e1bb6208e08eb0b0cff65d2fa1d14d44c2988a
+  sha256: 68a09a88975c66a4c717e7d7098422a826c0f3bd1ddd712ce62e8a00c7a8078b
 
 build:
   number: 0
