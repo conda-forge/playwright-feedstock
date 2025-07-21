@@ -73,6 +73,18 @@ description = "Build playwright-feedstock with variant osx_arm64_nodejs24 direct
 [tasks."inspect-osx_arm64_nodejs24"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_nodejs24.yaml"
 description = "List contents of playwright-feedstock packages built for variant osx_arm64_nodejs24"
+[tasks."build-win_64_nodejs22"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_nodejs22.yaml"
+description = "Build playwright-feedstock with variant win_64_nodejs22 directly (without setup scripts)"
+[tasks."inspect-win_64_nodejs22"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_nodejs22.yaml"
+description = "List contents of playwright-feedstock packages built for variant win_64_nodejs22"
+[tasks."build-win_64_nodejs24"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_nodejs24.yaml"
+description = "Build playwright-feedstock with variant win_64_nodejs24 directly (without setup scripts)"
+[tasks."inspect-win_64_nodejs24"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_nodejs24.yaml"
+description = "List contents of playwright-feedstock packages built for variant win_64_nodejs24"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
