@@ -30,8 +30,11 @@ requirements:
 
 tests:
   - script:
-      - npm list -g playwright
-      - npx playwright --version
+      - if: not win
+        then: playwright --version | grep "${{ version }}"
+        else:
+          - playwright --version | findstr "${{ version }}"
+          - where playwright
 
 about:
   summary: Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.
