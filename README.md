@@ -3,7 +3,7 @@ About playwright-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/playwright-feedstock/blob/main/LICENSE.txt)
 
-Home: https://playwright.dev
+Home: https://playwright.dev/
 
 Package license: Apache-2.0
 
@@ -15,7 +15,6 @@ Documentation: https://playwright.dev/docs/
 
 Playwright is a framework for Web Testing and Automation. It allows
 testing Chromium, Firefox and WebKit with a single API.
-
 
 Current build status
 ====================
