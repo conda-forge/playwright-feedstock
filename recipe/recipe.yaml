@@ -13,12 +13,13 @@ source:
   sha256: 16b7dc71511527ba6342931ce17479c10bdb5e7efcbdac7d8979fe902a2bb738
 
 build:
-  number: 1
-  skip: win
+  number: 2
 
 requirements:
   build:
-    - nodejs
+    - if: not win
+      then: nodejs
+      else: m2w64-jq
   host:
     - yarn <2
     - nodejs
@@ -38,7 +39,9 @@ about:
     Playwright is a framework for Web Testing and Automation. It allows
     testing Chromium, Firefox and WebKit with a single API.
   license: Apache-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - ThirdPartyLicenses.txt
   homepage: https://playwright.dev
   repository: https://github.com/microsoft/playwright
   documentation: https://playwright.dev/docs/
