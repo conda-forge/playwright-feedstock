@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: playwright
-  version: "1.55.1"
+  version: "1.56.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/microsoft/${{ name }}/archive//v${{ version }}.tar.gz
-  sha256: 55c9cdaf28c48b6190930ce47229b0892a2b27a00b71a4d261c1821e33fb4363
+  sha256: 6960634ebd801b0c1d106685793d71075b6cd79907b56de79fc99be3f49e2f97
 
 build:
   number: 0
